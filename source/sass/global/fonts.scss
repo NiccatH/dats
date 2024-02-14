@@ -11,16 +11,7 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "";
-
-  font-display: swap;
-  src: url("../fonts/.woff2") format("woff2");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Gotham book";
+  font-family: "Gotham";
 
   font-display: swap;
   src:
@@ -31,7 +22,7 @@
 @font-face {
   font-style: normal;
   font-weight: 500;
-  font-family: "Gotham medium";
+  font-family: "Gotham";
 
   font-display: swap;
   src:
@@ -48,4 +39,14 @@
   src:
     url("../fonts/overpass-semi-bold.woff2") format("woff2"),
     url("../fonts/overpass-semi-bold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 900;
+  font-family: "Montserrat";
+  font-display: swap;
+  src:
+    url("../fonts/montserrat-extra-bold.woff2") format("woff2"),
+    url("../fonts/montserrat-extra-bold.woff") format("woff");
 }

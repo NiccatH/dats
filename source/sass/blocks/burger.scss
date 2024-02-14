@@ -1,0 +1,30 @@
+.burger {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background-color: $color-summer-sky;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include vp-959 {
+    display: flex;
+  }
+
+  * {
+    background-color: $color-default-white;
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+  }
+
+  &__middle-line {
+    margin: 5px 0;
+  }
+}

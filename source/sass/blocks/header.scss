@@ -1,13 +1,57 @@
 .header {
-  padding: 28px 0;
+  position: relative;
+  padding: 30px 0 25px 0;
 
-  background-color: $color-neon-blue;
+  @include vp-1439 {
+    padding: 27px 0 20px 0;
+  }
 
-  .container {
+  @include vp-959 {
+    padding: 10px 0 17px 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $color-default-white;
+    opacity: 0.3;
+  }
+
+  &__wrapper {
+    position: relative;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include vp-959 {
+      align-items: center;
+    }
   }
 
   &__logo {
-    color: $color-default-white;
+    svg {
+      width: 230px;
+      height: 28px;
+
+      @include vp-959 {
+        width: 150px;
+        height: 18px;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &.is-open {
+    .main-nav {
+      @include vp-959 {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
   }
 }
