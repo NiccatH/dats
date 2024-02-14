@@ -1,27 +1,113 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  transition: all $trans-default;
+
+  @include vp-959 {
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    right: -20px;
+    visibility: hidden;
+    opacity: 0;
+    background-color: $color-nero;
+    transform: translateX(-100%);
+  }
+
   &__list {
-    display: flex;
-    margin: 0;
-    margin-right: 20px;
-    margin-left: 60px;
+    margin: -15px 0 0 -32px;
     padding: 0;
-
     list-style: none;
-  }
+    display: flex;
+    flex-wrap: wrap;
 
-  &__item {
-    margin-right: 20px;
-  }
+    @include vp-1439 {
+      margin-left: -21px;
+    }
 
-  &__link {
-    color: $color-default-white;
-
-    &.is-active {
-      opacity: 0.6;
+    @include vp-959 {
+      flex-direction: column;
+      margin: 0;
+      flex-grow: 1;
+      overflow-y: auto;
+      max-height: calc(100 * var(--vh, 1vh) - 70px);
+      flex-wrap: nowrap;
     }
   }
 
-  &__toggle {
-    display: none;
+  &__item {
+    direction: rtl;
+    margin-left: 32px;
+    margin-top: 15px;
+
+    @include vp-1439 {
+      margin-left: 21px;
+    }
+
+    @include vp-959 {
+      width: 100%;
+      display: flex;
+      margin: 0;
+    }
+
+    &:last-of-type {
+      .main-nav__link {
+        @include vp-1439 {
+          padding-right: 0;
+        }
+
+        @include vp-959 {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    &:not(:last-of-type) {
+      .main-nav__link {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 6px;
+          bottom: 3px;
+          left: -17px;
+          background-color: $color-default-white;
+          opacity: 0.3;
+          width: 1px;
+
+          @include vp-1439 {
+            left: unset;
+            right: -10px;
+          }
+
+          @include vp-959 {
+            top: unset;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: auto;
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+
+
+  &__link {
+    position: relative;
+    color: $color-default-white;
+    line-height: 1.2;
+    padding: 0 30px;
+
+    @include vp-1439 {
+      font-size: 16px;
+    }
+
+    @include vp-959 {
+      width: 100%;
+      text-align: center;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
