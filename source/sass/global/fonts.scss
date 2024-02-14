@@ -16,3 +16,36 @@
   font-display: swap;
   src: url("../fonts/.woff2") format("woff2");
 }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Gotham book";
+
+  font-display: swap;
+  src:
+    url("../fonts/gotham-book.woff2") format("woff2"),
+    url("../fonts/gotham-book.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 500;
+  font-family: "Gotham medium";
+
+  font-display: swap;
+  src:
+    url("../fonts/gotham-medium.woff2") format("woff2"),
+    url("../fonts/gotham-medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 600;
+  font-family: "Overpass";
+
+  font-display: swap;
+  src:
+    url("../fonts/overpass-semi-bold.woff2") format("woff2"),
+    url("../fonts/overpass-semi-bold.woff") format("woff");
+}
