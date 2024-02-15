@@ -1,0 +1,16 @@
+.logo {
+  svg {
+    width: 230px;
+    height: 28px;
+  }
+
+  &--small-opacity {
+    svg {
+      @include vp-959 {
+        width: 150px;
+        height: 18px;
+        opacity: 0.5;
+      }
+    }
+  }
+}
