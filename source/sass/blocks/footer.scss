@@ -1,5 +1,121 @@
 .footer {
-  padding: 40px 0;
+  position: relative;
+  padding: 28px 0 17px 0;
+  background-color: $color-night-rider;
+  overflow: hidden;
 
-  background-color: $color-neon-blue;
+  @include vp-1439 {
+    padding: 19px 0;
+  }
+
+  @include vp-959 {
+    padding: 31px 0 25px 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $color-default-white;
+    opacity: 0.3;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 0.3fr 0.9fr 0.5fr;
+    gap: 20px;
+    align-items: flex-start;
+    padding-bottom: 25px;
+
+    @include vp-1439 {
+      grid-template-columns: 230px 1fr;
+      gap: 14px;
+      padding-bottom: 32px;
+    }
+
+    @include vp-959 {
+      grid-template-columns: 1fr;
+      gap: 19px;
+      padding-bottom: 26px;
+    }
+  }
+
+  &__logo {
+    margin-top: 12px;
+    margin-left: -11px;
+
+    @include vp-959 {
+      margin: 0 0 4px 0;
+      justify-self: center;
+    }
+  }
+
+  &__pay-list {
+    justify-self: center;
+  }
+
+  &__social-list {
+    &.link-list {
+      margin-right: 10px;
+
+      @include vp-959 {
+        margin-right: 0;
+      }
+    }
+    justify-self: flex-end;
+
+    @include vp-1439 {
+      grid-column: 2 / 3;
+    }
+
+    @include vp-959 {
+      grid-column: auto;
+    }
+  }
+
+  &__copyright {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 17px;
+
+    @include vp-1439 {
+      padding-top: 20px;
+    }
+
+    @include vp-959 {
+      padding-top: 24px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 9999px;
+      top: 0;
+      height: 1px;
+      background-color: $color-default-white;
+      opacity: 0.3;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 1.4;
+      margin: 0 0 8px 0;
+
+      @include vp-959 {
+        margin-bottom: 14px;
+      }
+
+      br {
+        @include vp-1439 {
+          display: none;
+        }
+      }
+    }
+  }
 }

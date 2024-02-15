@@ -23,11 +23,11 @@ mixin header(headerMods, currentUrl)
     .container
       .header__wrapper
         if(currentUrl === "index.html")
-          +logo().header__logo
+          +logo().logo--small-opacity
         else
-          +logo({isLink:true}).heder__logo
+          +logo({isLink:true}).logo--small-opacity
         +burger()
-        nav.main-nav
+        nav.main-nav.header__nav
           ul.main-nav__list(data-scroll-lock-scrollable)
             each link in headerLinks
               li.main-nav__item

@@ -1,0 +1,9 @@
+mixin link-list(data)
+  ul.link-list&attributes(attributes)
+    each item in data
+      li.link-list__item(class= item.mode ? item.mode : "")
+        a.link-list__link(href=item.href)
+          if item.icon
+            +icon(item.icon.name, item.icon.width, item.icon.height)
+          if item.img
+            +img(item.img.path, item.img.image, item.img.format, item.img.width, item.img.height, item.img.altText)

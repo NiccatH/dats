@@ -32,21 +32,16 @@
     }
   }
 
-  &__logo {
-    svg {
-      width: 230px;
-      height: 28px;
+  &__nav {
+    transform: translateX(192px);
 
-      @include vp-959 {
-        width: 150px;
-        height: 18px;
-        opacity: 0.5;
-      }
+    @include vp-1919 {
+      transform: translateX(0);
     }
   }
 
   &.is-open {
-    .main-nav {
+    .header__nav {
       @include vp-959 {
         visibility: visible;
         opacity: 1;
