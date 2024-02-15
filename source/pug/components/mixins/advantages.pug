@@ -1,0 +1,9 @@
+mixin advantages(data)
+  .advantages&attributes(attributes)
+    +icon("icon-short-arrow", 49, 38).advantages__decor
+    ul.advantages__list
+      each item in data
+        li.advantages__item
+          .advantages__icon
+            +icon(item.name, item.width, item.height)
+          p.advantages__item-text!=item.text
