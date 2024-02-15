@@ -1,10 +1,42 @@
 mixin intro()
+  -
+    const advantagesList = [
+      {
+        text: "География 60+ стран",
+        name: "icon-earth",
+        width: 31,
+        height: 31,
+      },
+      {
+        text: "Бонусы и скидки от партнеров",
+        name: "icon-gift",
+        width: 32,
+        height: 32,
+      },
+      {
+        text: "Удобный интерфейс личного кабинета",
+        name: "icon-profile",
+        width: 30,
+        height: 30,
+      },
+      {
+        text: "API и Postback",
+        name: "icon-gear",
+        width: 32,
+        height: 32,
+      },
+    ]
   .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
-    .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
-
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+    h1.intro__title СРА сеть
+      span SHAKES PRO
+        +icon("icon-arrow-up", 79, 13)
+    h2.intro__sub-title
+      span.intro__sub-title-main Ведущая нутра партнерка
+      span.intro__sub-title-sub с 2013 года
+        +icon("icon-arrow-down", 69, 32)
+    +advantages(advantagesList).intro__advantages
+    .intro__reg
+      +btn({text:" Зарегистрироваться"}).intro__reg-btn
+      .intro__reg-info
+        +icon("icon-reg", 54, 54)
+        p.intro__reg-text Регистрируйся и выходи на новый уровень

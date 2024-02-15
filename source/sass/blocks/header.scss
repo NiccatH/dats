@@ -19,6 +19,7 @@
     height: 1px;
     background-color: $color-default-white;
     opacity: 0.3;
+    z-index: 1;
   }
 
   &__wrapper {

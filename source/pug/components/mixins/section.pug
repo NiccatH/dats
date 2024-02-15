@@ -1,0 +1,5 @@
+mixin section(parameters = {})
+  - const sectionMods = parameters.sectionMods ? parameters.sectionMods : ""
+  section.page-section(class = sectionMods)
+    .container
+      block
