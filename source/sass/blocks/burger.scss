@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   transition: all $trans-default;
+  user-select: none;
 
   @include hover-focus {
     background-color: $color-default-white;
@@ -33,6 +34,8 @@
     height: 2px;
     border-radius: 5px;
     transition: all $trans-default;
+    user-select: none;
+    pointer-events: none;
   }
 
   &__middle-line {
