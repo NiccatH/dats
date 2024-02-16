@@ -1,2 +1,149 @@
 mixin promo()
+  -
+    const list = [
+      {
+        text: "защита от невыплат сторонних рекламодателей",
+      },
+      {
+        text: "приватные тесты новых авторских офферов",
+      },
+      {
+        text: "поиск и добавление офферов под запрос",
+      },
+    ]
+
+    const slides = [
+      [
+        {
+          path: 'slides',
+          image: 'alcobarrier',
+          format: 'png',
+          width: 107,
+          height: 89,
+          altText: 'alcobarrier',
+        },
+        {
+          path: 'slides',
+          image: 'keto-diet',
+          format: 'png',
+          width: 112,
+          height: 81,
+          altText: 'keto diet',
+        },
+      ],
+      [
+        {
+          path: 'slides',
+          image: 'toxorbin',
+          format: 'png',
+          width: 146,
+          height: 62,
+          altText: 'toxorbin',
+        },
+        {
+          path: 'slides',
+          image: 'sexup',
+          format: 'png',
+          width: 166,
+          height: 91,
+          altText: 'sex up men',
+        },
+      ],
+      [
+        {
+          path: 'slides',
+          image: 'fitospray',
+          format: 'png',
+          width: 111,
+          height: 89,
+          altText: 'fito spray',
+        },
+        {
+          path: 'slides',
+          image: 'longjack',
+          format: 'png',
+          width: 168,
+          height: 66,
+          altText: 'longjack xxxl',
+        },
+      ],
+      [
+        {
+          path: 'slides',
+          image: 'alcobarrier',
+          format: 'png',
+          width: 107,
+          height: 89,
+          altText: 'alcobarrier',
+        },
+        {
+          path: 'slides',
+          image: 'keto-diet',
+          format: 'png',
+          width: 112,
+          height: 81,
+          altText: 'keto diet',
+        },
+      ],
+      [
+        {
+          path: 'slides',
+          image: 'toxorbin',
+          format: 'png',
+          width: 146,
+          height: 62,
+          altText: 'toxorbin',
+        },
+        {
+          path: 'slides',
+          image: 'sexup',
+          format: 'png',
+          width: 166,
+          height: 91,
+          altText: 'sex up men',
+        },
+      ],
+      [
+        {
+          path: 'slides',
+          image: 'fitospray',
+          format: 'png',
+          width: 111,
+          height: 89,
+          altText: 'fito spray',
+        },
+        {
+          path: 'slides',
+          image: 'longjack',
+          format: 'png',
+          width: 168,
+          height: 66,
+          altText: 'longjack xxxl',
+        },
+      ],
+    ]
+
   .promo
+    h2.promo__title Получи доступ к 2000+ офферам<br>по нутре, включая топ-бренды
+    .promo__reg
+      ul.promo__list
+        each item in list
+          li.promo__list-item
+            .promo__list-marker
+              +icon("icon-tick", 7, 7)
+            p.promo__list-text!=item.text
+      .promo__swiper
+        .swiper(data-promo-slider)
+          .swiper-wrapper
+            each slideGroup in slides
+              .swiper-slide
+                .promo__slide
+                  each card in slideGroup
+                    +slider-card(card)
+        .swiper-button-next.promo__swiper-button-next.promo__swiper-button
+          +icon("icon-slider-arrow", 14, 14)
+        .swiper-button-prev.promo__swiper-button-prev.promo__swiper-button
+          +icon("icon-slider-arrow", 14, 14)
+      .promo__reg-block
+        p.promo__reg-info Получи доступ офферам
+        +btn({text: "Зарегистрироваться"}).promo__reg-btn
