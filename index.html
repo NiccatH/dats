@@ -5,44 +5,247 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="ProjectName — описание">
+    <meta name="description" content="Dats">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container"><span class="header__logo">Логотип</span>
-          <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#icon-burger"></use>
+      <svg class="decor decor--obj" width="1859" height="602" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#object"></use>
+      </svg>
+      <svg class="decor decor--right-top-lipstick-45deg" width="1139" height="456" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#ellipse"></use>
+      </svg>
+      <svg class="decor decor--right-top-paua-45deg" width="1139" height="456" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#ellipse"></use>
+      </svg>
+      <svg class="decor decor--left-center-christalle-27deg" width="540" height="951" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#ellipse-vert"></use>
+      </svg>
+      <svg class="decor decor--left-center-christalle-27deg-small" width="540" height="951" aria-hidden="true">
+        <use xlink:href="img/sprite.svg#ellipse-vert"></use>
+      </svg>
+      <header class="header" data-header>
+        <div class="container">
+          <div class="header__wrapper">
+            <span class="logo logo--small-opacity">
+              <svg width="230" height="28" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-logo"></use>
               </svg>
-            </button>
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
-                </li>
+            </span>
+            <button class="burger" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-burger><span class="burger__top-line"></span><span class="burger__middle-line"></span><span class="burger__bottom-line"></span></button>
+            <nav class="main-nav header__nav">
+              <ul class="main-nav__list" data-scroll-lock-scrollable>
+                <li class="main-nav__item"><a class="main-nav__link" href="index.html" data-close-menu>Команда</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#" data-close-menu>Призы</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#" data-close-menu>Отзывы</a></li>
+                <li class="main-nav__item"><a class="main-nav__link" href="#" data-close-menu>Партнеры</a></li>
               </ul>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </header>
       <main>
-        <div class="intro">
+        <section class="section">
           <div class="container">
-            <p style="margin-top: 40px;">Текст&nbsp;с&nbsp;мнемониками</p>
-            <p style="margin-top: 40px;">Пример использования +img()</p>
-            <p style="margin-bottom: 40px;"><img src="img/content/placeholder.png" srcset="img/content/placeholder@2x.png 2x" width="120" height="120" alt="Пример">
-            </p>
+            <div class="intro">
+              <h1 class="intro__title">СРА сеть<span>SHAKES PRO
+                  <svg width="79" height="13" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-up"></use>
+                  </svg></span></h1>
+              <h2 class="intro__sub-title"><span class="intro__sub-title-main">Ведущая нутра партнерка</span><span class="intro__sub-title-sub">с 2013 года
+                  <svg width="69" height="32" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                  </svg></span></h2>
+              <div class="advantages intro__advantages">
+                <svg class="advantages__decor" width="49" height="38" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-short-arrow"></use>
+                </svg>
+                <ul class="advantages__list">
+                  <li class="advantages__item">
+                    <div class="advantages__icon">
+                      <svg width="31" height="31" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-earth"></use>
+                      </svg>
+                    </div>
+                    <p class="advantages__item-text">География 60+ стран</p>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon">
+                      <svg width="32" height="32" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-gift"></use>
+                      </svg>
+                    </div>
+                    <p class="advantages__item-text">Бонусы и скидки от партнеров</p>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon">
+                      <svg width="30" height="30" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-profile"></use>
+                      </svg>
+                    </div>
+                    <p class="advantages__item-text">Удобный интерфейс личного кабинета</p>
+                  </li>
+                  <li class="advantages__item">
+                    <div class="advantages__icon">
+                      <svg width="32" height="32" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-gear"></use>
+                      </svg>
+                    </div>
+                    <p class="advantages__item-text">API и Postback</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="intro__reg">
+                <button class="btn intro__reg-btn" type="button"> Зарегистрироваться</button>
+                <div class="intro__reg-info">
+                  <svg width="54" height="54" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-reg"></use>
+                  </svg>
+                  <p class="intro__reg-text">Регистрируйся и выходи на новый уровень</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="promo">
+              <h2 class="promo__title">Получи доступ к 2000+ офферам<br>по нутре, включая топ-бренды</h2>
+              <div class="promo__reg">
+                <ul class="promo__list">
+                  <li class="promo__list-item">
+                    <div class="promo__list-marker">
+                      <svg width="7" height="7" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </div>
+                    <p class="promo__list-text">защита от невыплат сторонних рекламодателей</p>
+                  </li>
+                  <li class="promo__list-item">
+                    <div class="promo__list-marker">
+                      <svg width="7" height="7" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </div>
+                    <p class="promo__list-text">приватные тесты новых авторских офферов</p>
+                  </li>
+                  <li class="promo__list-item">
+                    <div class="promo__list-marker">
+                      <svg width="7" height="7" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#icon-tick"></use>
+                      </svg>
+                    </div>
+                    <p class="promo__list-text">поиск и добавление офферов под запрос</p>
+                  </li>
+                </ul>
+                <div class="promo__swiper">
+                  <div class="swiper" data-promo-slider>
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/alcobarrier.png" srcset="img/slides/alcobarrier@2x.png 2x" width="107" height="89" alt="alcobarrier">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/keto-diet.png" srcset="img/slides/keto-diet@2x.png 2x" width="112" height="81" alt="keto diet">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/toxorbin.png" srcset="img/slides/toxorbin@2x.png 2x" width="146" height="62" alt="toxorbin">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/sexup.png" srcset="img/slides/sexup@2x.png 2x" width="166" height="91" alt="sex up men">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/fitospray.png" srcset="img/slides/fitospray@2x.png 2x" width="111" height="89" alt="fito spray">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/longjack.png" srcset="img/slides/longjack@2x.png 2x" width="168" height="66" alt="longjack xxxl">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/alcobarrier.png" srcset="img/slides/alcobarrier@2x.png 2x" width="107" height="89" alt="alcobarrier">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/keto-diet.png" srcset="img/slides/keto-diet@2x.png 2x" width="112" height="81" alt="keto diet">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/toxorbin.png" srcset="img/slides/toxorbin@2x.png 2x" width="146" height="62" alt="toxorbin">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/sexup.png" srcset="img/slides/sexup@2x.png 2x" width="166" height="91" alt="sex up men">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="promo__slide">
+                          <div class="slider-card"><img src="img/slides/fitospray.png" srcset="img/slides/fitospray@2x.png 2x" width="111" height="89" alt="fito spray">
+                          </div>
+                          <div class="slider-card"><img src="img/slides/longjack.png" srcset="img/slides/longjack@2x.png 2x" width="168" height="66" alt="longjack xxxl">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-button-next promo__swiper-button-next promo__swiper-button">
+                    <svg width="14" height="14" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-slider-arrow"></use>
+                    </svg>
+                  </div>
+                  <div class="swiper-button-prev promo__swiper-button-prev promo__swiper-button">
+                    <svg width="14" height="14" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-slider-arrow"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="promo__reg-block">
+                  <p class="promo__reg-info">Получи доступ офферам</p>
+                  <button class="btn promo__reg-btn" type="button">Зарегистрироваться</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="footer__wrapper">
+            <span class="logo footer__logo">
+              <svg width="230" height="28" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-logo"></use>
+              </svg>
+            </span>
+            <ul class="link-list link-list--wide-items footer__pay-list">
+              <li class="link-list__item"><a class="link-list__link" href="#"><img src="img/content/webmoney.png" srcset="img/content/webmoney@2x.png 2x" width="105" height="28" alt="webmoney"></a></li>
+              <li class="link-list__item"><a class="link-list__link" href="#">
+                  <svg width="90" height="28" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-capitalist"></use>
+                  </svg></a></li>
+              <li class="link-list__item"><a class="link-list__link" href="#"><img src="img/content/wiretransfer.png" srcset="img/content/wiretransfer@2x.png 2x" width="101" height="59" alt="wire transfer"></a></li>
+              <li class="link-list__item"><a class="link-list__link" href="#"><img src="img/content/wiretransfer.png" srcset="img/content/wiretransfer@2x.png 2x" width="101" height="59" alt="wire transfer"></a></li>
+            </ul>
+            <ul class="link-list footer__social-list">
+              <li class="link-list__item link-list__item--fill-pacific-blue"><a class="link-list__link" href="#">
+                  <svg width="26" height="26" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                  </svg></a></li>
+              <li class="link-list__item link-list__item--fill-san-marino"><a class="link-list__link" href="#">
+                  <svg width="25" height="25" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-vk"></use>
+                  </svg></a></li>
+              <li class="link-list__item link-list__item--fill-chilean-fire link-list__item--extra-pd"><a class="link-list__link" href="#"><img src="img/content/trafic-cardinal.png" srcset="img/content/trafic-cardinal@2x.png 2x" width="120" height="14" alt="trafic-cardinal"></a></li>
+            </ul>
+          </div>
+          <div class="footer__copyright">
+            <p>ⓒ 2013-2022 All rights reserved. Affilate Networks Group EZE LLC A-30-01-04-08, Flamingo Villas, Ajman, <br>United Arab Emirates</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>
