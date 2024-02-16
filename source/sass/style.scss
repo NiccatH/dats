@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -33,6 +33,8 @@
 @import "blocks/link-list.scss";
 @import "blocks/intro";
 @import "blocks/advantages";
+@import "blocks/promo";
+@import "blocks/slider-card";
 
 // ---------------------------------
 

@@ -1,0 +1,24 @@
+.slider-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-mardi-gras;
+  min-height: 102px;
+  border-radius: 10px;
+
+  @include vp-1439 {
+    height: 82px;
+    min-height: unset;
+    padding: 5px;
+  }
+
+  @include vp-959 {
+    height: 74px;
+  }
+
+  img {
+    @include vp-1439 {
+      scale: 0.9;
+    }
+  }
+}
