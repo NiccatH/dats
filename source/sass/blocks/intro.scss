@@ -44,7 +44,8 @@
 
         @include vp-1439 {
           bottom: -49px;
-          left: 54%;
+          left: unset;
+          right: 7%;
         }
 
         @include vp-959 {
@@ -112,7 +113,8 @@
         width: 78px;
         height: 41px;
         top: -9px;
-        left: 67%;
+        left: unset;
+        right: 9%;
         transform: scaleX(-1);
       }
     }

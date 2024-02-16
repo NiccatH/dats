@@ -69,12 +69,12 @@
   }
 
   &--left-center-christalle-27deg {
+    width: 540px;
+    height: 951px;
     top: 830px;
     right: 50%;
     transform: rotate(27deg) translateX(-120%);
     color: $color-christalle;
-    width: 540px;
-    height: 951px;
     filter: blur(135px);
 
     @include vp-1439 {
@@ -91,14 +91,14 @@
     display: none;
     width: 346px;
     height: 609px;
+    top: 264px;
     right: 50%;
     color: $color-christalle;
+    transform: rotate(27deg) translateX(-42%);
+    filter: blur(135px);
 
     @include vp-1439 {
       display: block;
-      top: 264px;
-      transform: rotate(27deg) translateX(-42%);
-      filter: blur(135px);
     }
 
     @include vp-959 {
