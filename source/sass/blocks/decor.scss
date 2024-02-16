@@ -1,6 +1,9 @@
 .decor {
   position: absolute;
   z-index: -1;
+  user-select: none;
+  pointer-events: none;
+  will-change: transform;
 
   &--obj {
     top: -83px;

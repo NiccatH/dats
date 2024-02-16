@@ -10,6 +10,8 @@
   svg {
     width: 230px;
     height: 28px;
+    user-select: none;
+    pointer-events: none;
   }
 
   &--small-opacity {
