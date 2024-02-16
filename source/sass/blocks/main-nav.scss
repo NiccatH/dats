@@ -13,6 +13,7 @@
     background-color: $color-nero;
     transform: translateX(-100%);
     z-index: 1;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3);
   }
 
   &__list {
@@ -21,6 +22,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
 
     @include vp-1439 {
       margin-left: -21px;
@@ -33,6 +35,7 @@
       overflow-y: auto;
       max-height: calc(100 * var(--vh, 1vh) - 70px);
       flex-wrap: nowrap;
+      justify-content: flex-start;
     }
   }
 
@@ -99,6 +102,11 @@
     color: $color-default-white;
     line-height: 1.2;
     padding: 0 30px;
+    transition: all $trans-default;
+
+    @include hover-focus {
+      opacity: 0.3;
+    }
 
     @include vp-1439 {
       font-size: 16px;

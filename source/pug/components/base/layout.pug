@@ -10,7 +10,7 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="ProjectName — описание")
+    meta(name="description", content="Dats")
     //- генерируйте favicon тут - https://realfavicongenerator.net/
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
     //- используйте только для шрифта находящегося на первом экране
@@ -33,6 +33,11 @@ html(lang="ru")
 
   body
     .wrapper(class=wrapperMods)
+      +icon("object", 1859, 602).decor.decor--obj
+      +icon("ellipse", 1139, 456).decor.decor--right-top-lipstick-45deg
+      +icon("ellipse", 1139, 456).decor.decor--right-top-paua-45deg
+      +icon("ellipse-vert", 540, 951).decor.decor--left-center-christalle-27deg
+      +icon("ellipse-vert", 540, 951).decor.decor--left-center-christalle-27deg-small
       if (hasHeader)
         +header(headerMods, currentUrl)
 
