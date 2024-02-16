@@ -13,27 +13,38 @@
   }
 
   &__item {
-    min-width: 43px;
-    min-height: 43px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     margin-left: 10px;
     margin-top: 10px;
-    background-color: $color-mardi-gras;
     border-radius: 5px;
 
+    .link-list__link {
+      background-color: $color-mardi-gras;
+
+      @include hover-focus {
+        background-color: $color-nero;
+      }
+    }
+
     &--fill-pacific-blue {
-      background-color: $color-pacific-blue;
+      .link-list__link {
+        background-color: $color-pacific-blue;
+      }
     }
 
     &--fill-san-marino {
-      background-color: $color-san-marino;
+      .link-list__link {
+        background-color: $color-san-marino;
+      }
     }
 
     &--fill-chilean-fire {
-      background-color: $color-chilean-fire;
+      .link-list__link {
+        background-color: $color-chilean-fire;
+      }
     }
 
     &--extra-pd {
@@ -44,15 +55,16 @@
   }
 
   &__link {
-    width: 100%;
-    height: 100%;
+    min-width: 43px;
+    min-height: 43px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all $trans-default;
   }
 
   &--wide-items {
-    .link-list__item {
+    .link-list__item .link-list__link {
       width: 139px;
       height: 49px;
 

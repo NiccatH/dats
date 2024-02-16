@@ -24,6 +24,7 @@ export class Burger {
 
   _openMenu() {
     this._isMenuOpen = true;
+    this._burger.setAttribute('aria-pressed', true);
     this._header.classList.add('is-open');
     this._scrollLock.disablePageScroll();
     document.addEventListener('keydown', this._onDocumentKeydown);
@@ -36,6 +37,7 @@ export class Burger {
 
   _closeMenu() {
     this._isMenuOpen = false;
+    this._burger.setAttribute('aria-pressed', false);
     this._header.classList.remove('is-open');
     this._scrollLock.enablePageScroll();
     this._focusLock.unlock('[data-header]');

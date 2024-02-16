@@ -1,16 +1,4 @@
 .promo {
-  padding: 42px 0 299px 0;
-
-  @include vp-1439 {
-    padding-top: 74px;
-    padding-bottom: 224px;
-  }
-
-  @include vp-959 {
-    padding-top: 8px;
-    padding-bottom: 91px;
-  }
-
   &__title {
     font-family: $ff-overpass;
     font-weight: 600;
@@ -88,7 +76,7 @@
     height: 15px;
     background-color: $color-royal-blue;
     border-radius: 50%;
-    margin-top: 10px;
+    margin-top: 5px;
 
     @include vp-959 {
       margin-top: 3px;

@@ -1,0 +1,105 @@
+.decor {
+  position: absolute;
+  z-index: -1;
+
+  &--obj {
+    top: -83px;
+    left: 50%;
+    transform: translateX(-9%);
+    width: 1859px;
+    height: 602px;
+
+    @include vp-1439 {
+      top: -41px;
+      width: 1081px;
+      height: 364px;
+      transform: translateX(0);
+    }
+
+    @include vp-959 {
+      display: none;
+    }
+  }
+
+  &--right-top-paua-45deg {
+    top: 0;
+    left: 50%;
+    transform: matrix(-0.75, 0.66, 0.75, 0.66, 70, -85);
+    color: $color-paua;
+    width: 1139px;
+    height: 456px;
+    filter: blur(135px);
+
+    @include vp-1439 {
+      width: 678px;
+      height: 272px;
+      transform: matrix(-0.75, 0.66, 0.75, 0.66, -114, -93);
+    }
+
+    @include vp-959 {
+      transform: matrix(0.98, 0.22, -0.83, 0.56, -237, 38) rotate(79deg);
+      width: 432px;
+      height: 261px;
+    }
+  }
+
+  &--right-top-lipstick-45deg {
+    top: 0;
+    left: 50%;
+    transform: matrix(-0.75, 0.66, 0.75, 0.66, 243, 216);
+    color: $color-lipstick;
+    width: 1139px;
+    height: 456px;
+    filter: blur(135px);
+
+    @include vp-1439 {
+      width: 678px;
+      height: 272px;
+      transform: matrix(-0.75, 0.66, 0.75, 0.66, -6, 97);
+    }
+
+    @include vp-959 {
+      transform: matrix(0.98, 0.22, -0.83, 0.56, -7, -59) rotate(117deg);
+      width: 450px;
+      height: 180px;
+    }
+  }
+
+  &--left-center-christalle-27deg {
+    top: 830px;
+    right: 50%;
+    transform: rotate(27deg) translateX(-120%);
+    color: $color-christalle;
+    width: 540px;
+    height: 951px;
+    filter: blur(135px);
+
+    @include vp-1439 {
+      top: 527px;
+      transform: rotate(27deg) translateX(-54%);
+    }
+
+    @include vp-959 {
+      display: none;
+    }
+  }
+
+  &--left-center-christalle-27deg-small {
+    display: none;
+    width: 346px;
+    height: 609px;
+    right: 50%;
+    color: $color-christalle;
+
+    @include vp-1439 {
+      display: block;
+      top: 264px;
+      transform: rotate(27deg) translateX(-42%);
+      filter: blur(135px);
+    }
+
+    @include vp-959 {
+      display: none;
+    }
+  }
+}

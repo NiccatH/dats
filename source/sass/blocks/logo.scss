@@ -1,4 +1,12 @@
 .logo {
+  transition: all $trans-default;
+
+  &:link {
+    @include hover-focus {
+      opacity: 0.5;
+    }
+  }
+
   svg {
     width: 230px;
     height: 28px;
