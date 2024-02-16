@@ -69,6 +69,7 @@
     &:not(:last-of-type) {
       .main-nav__link {
         &::before {
+          will-change: transform;
           content: "";
           position: absolute;
           top: 6px;
@@ -77,9 +78,10 @@
           background-color: $color-default-white;
           opacity: 0.3;
           width: 1px;
+          height: 13px;
 
           @include vp-1439 {
-            left: unset;
+            left: auto;
             right: -10px;
           }
 
