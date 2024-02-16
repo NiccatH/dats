@@ -40,7 +40,6 @@
   }
 
   &__item {
-    direction: rtl;
     margin-left: 32px;
     margin-top: 15px;
 
@@ -78,11 +77,11 @@
           background-color: $color-default-white;
           opacity: 0.3;
           width: 1px;
-          height: 13px;
 
           @include vp-1439 {
-            left: auto;
+            left: unset;
             right: -10px;
+            height: 13px;
           }
 
           @include vp-959 {
