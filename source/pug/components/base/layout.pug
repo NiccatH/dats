@@ -33,11 +33,11 @@ html(lang="ru")
 
   body
     .wrapper(class=wrapperMods)
-      +icon("object", 1859, 602).decor.decor--obj
-      +icon("ellipse", 1139, 456).decor.decor--right-top-lipstick-45deg
-      +icon("ellipse", 1139, 456).decor.decor--right-top-paua-45deg
-      +icon("ellipse-vert", 540, 951).decor.decor--left-center-christalle-27deg
-      +icon("ellipse-vert", 540, 951).decor.decor--left-center-christalle-27deg-small
+      +icon("object", 1859, 602).decor
+      .oval.oval--lipstick.oval--horizontal.oval--margin-top-right
+      .oval.oval--paua.oval--horizontal.oval--absolute-top-right
+      .oval.oval--christalle.oval--vertical.oval--absolut-center-27deg.oval--redesign
+      .oval.oval--christalle.oval--vertical.oval--small.oval--temporary.oval--top-center-30deg
       if (hasHeader)
         +header(headerMods, currentUrl)
 
