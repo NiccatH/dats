@@ -2984,6 +2984,7 @@ button,
   align-items: center;
   padding: 10px;
   background-color: #181818;
+  border-radius: 10px;
 }
 
 .advantages__item::before {
@@ -3453,6 +3454,7 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     gap: 9px;
+    border-radius: 5px;
   }
 
   .advantages__item::before {
