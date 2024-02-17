@@ -48,11 +48,13 @@
     align-items: center;
     padding: 10px;
     background-color: $color-nero;
+    border-radius: 10px;
 
     @include vp-1439 {
       grid-template-columns: 33px auto;
       align-items: flex-start;
       gap: 9px;
+      border-radius: 5px;
     }
 
     @include vp-959 {
