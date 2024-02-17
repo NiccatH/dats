@@ -1,0 +1,110 @@
+.oval {
+  user-select: none;
+  pointer-events: none;
+  will-change: transform;
+  border-radius: 50%;
+  filter: blur(135px);
+  position: absolute;
+  z-index: -1;
+
+  &--horizontal {
+    width: 1139px;
+    height: 456px;
+
+    @include vp-1439 {
+      width: 678px;
+      height: 272px;
+    }
+  }
+
+  &--vertical {
+    width: 540px;
+    height: 951px;
+  }
+
+  &--small {
+    scale: 0.64;
+  }
+
+  &--temporary {
+    display: none;
+
+    @include vp-1439 {
+      display: block;
+    }
+
+    @include vp-959 {
+      display: none;
+    }
+  }
+
+  &--paua {
+    background-color: $color-paua;
+  }
+
+  &--lipstick {
+    background-color: $color-lipstick;
+  }
+
+  &--christalle {
+    background-color: $color-christalle;
+  }
+
+
+  &--absolute-top-right,
+  &--margin-top-right {
+    left: 50%;
+    top: 0;
+  }
+
+  &--absolute-top-right {
+    transform: matrix(-0.75, 0.66, 0.75, 0.66, 72, -87);
+
+    @include vp-1439 {
+      transform: matrix(-0.75, 0.66, 0.75, 0.66, -110, -87);
+    }
+
+    @include vp-959 {
+      display: none;
+    }
+  }
+
+  &--margin-top-right {
+    transform: matrix(-0.75, 0.66, 0.75, 0.66, 222, 236);
+
+    @include vp-1439 {
+      transform: matrix(-0.75, 0.66, 0.75, 0.66, 0, 92);
+    }
+
+    @include vp-959 {
+      transform: matrix(-0.94, 0.33, 0.95, 0.33, -367, -145);
+      scale: 0.56;
+    }
+  }
+
+  &--absolut-center-27deg {
+    top: 826px;
+    right: 50%;
+    transform: rotate(27deg) translateX(-120%);
+
+    @include vp-1439 {
+      top: 528px;
+      transform: rotate(27deg) translateX(-54%);
+    }
+  }
+
+  &--top-center-30deg {
+    top: 52px;
+    right: 50%;
+    transform: rotate(30deg) translateX(-15%);
+  }
+
+  &--redesign {
+    @include vp-959 {
+      transform: matrix(1, 0, -0.68, 0.73, 93, 6);
+      width: 242px;
+      height: 294px;
+      top: 0;
+    }
+  }
+}
