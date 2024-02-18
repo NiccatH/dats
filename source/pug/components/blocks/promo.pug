@@ -124,14 +124,14 @@ mixin promo()
     ]
 
   .promo
-    h2.promo__title Получи доступ к 2000+ офферам<br>по нутре, включая топ-бренды
+    h2.promo__title Получи доступ к 2000+ офферам<br> по нутре, включая топ-бренды
     .promo__reg
       ul.promo__list
         each item in list
           li.promo__list-item
             .promo__list-marker
               +icon("icon-tick", 7, 7)
-            p.promo__list-text!=item.text
+            p.promo__list-text!= item.text
       .promo__swiper
         .swiper(data-promo-slider)
           .swiper-wrapper

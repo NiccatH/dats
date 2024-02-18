@@ -1,4 +1,5 @@
 const initSlider = () => {
+  // eslint-disable-next-line no-unused-vars, no-undef
   const promoSlider = new Swiper('[data-promo-slider]', {
     slidesPerView: 2,
     spaceBetween: 22,
